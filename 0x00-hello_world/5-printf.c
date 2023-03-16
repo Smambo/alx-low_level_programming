@@ -1,6 +1,6 @@
 #include <stdio.h>
 
- /**
+/**
   * main - Program prints string followed by new line
   *
   * Result: Always 0 (Success)
