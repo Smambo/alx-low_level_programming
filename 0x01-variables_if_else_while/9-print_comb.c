@@ -14,7 +14,7 @@ int main(void)
 	for (n = 0; n < 10; n++)
 	{
 		putchar((n % 10) + '0');
-		if (n != 10)
+		if (n != 9)
 		{
 			putchar(',');
 			putchar(' ');
