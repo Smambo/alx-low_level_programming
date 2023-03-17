@@ -13,15 +13,23 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 0; n < 100; n++)
+	for (n = 0; n < 10; n++)
 	{
-		putchar((n % 100) + '0');
-		if (n != 99)
+		for (m = 0; m < 10; m++)
 		{
-			putchar(',');
-			putchar(' ');
+			if ((m % 10) > (n % 10))
+			{
+				putchar((n % 10) + '0');
+				putchar((m % 10) + '0');
+				if (n != 9 || m != 10)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
 	return (0);
+
 }
