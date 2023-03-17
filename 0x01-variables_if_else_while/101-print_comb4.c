@@ -20,7 +20,7 @@ int main(void)
 		{
 			for (r = 0; r < 10; r++)
 			{
-				if ((r % 10) > (q % 10) > (p % 10))
+				if (r > q && q  > p)
 				{
 					putchar((p % 10) + '0');
 					putchar((q % 10) + '0');
