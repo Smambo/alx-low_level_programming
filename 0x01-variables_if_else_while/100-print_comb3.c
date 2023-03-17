@@ -21,7 +21,7 @@ int main(void)
 			{
 				putchar((n % 10) + '0');
 				putchar((m % 10) + '0');
-				if (n != 9 || m != 9)
+				if (n != 9 || m != 10)
 				{
 					putchar(',');
 					putchar(' ');
