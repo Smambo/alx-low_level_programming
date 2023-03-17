@@ -11,6 +11,7 @@ int main(void)
 
 {
 	int n;
+	char a;
 
 	for (n = 0; n < 16; n++)
 	{
