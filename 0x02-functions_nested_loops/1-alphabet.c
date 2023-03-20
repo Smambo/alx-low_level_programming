@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
  * print_alphabet - does just that
@@ -6,7 +6,7 @@
  * Return: 0 (Success)
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 
 {
 	char a;
