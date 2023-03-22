@@ -27,7 +27,7 @@ void print_times_table(int n)
 			{
 				_putchar('0');
 			}
-			else if (prod <= n)
+			else if (prod <= 9)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -40,7 +40,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(prod /10 + '0');
+				_putchar(prod / 10 + '0');
 				_putchar(prod % 10 + '0');
 			}
 			else
