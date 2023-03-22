@@ -26,7 +26,7 @@ void print_times_table(int n)
 			printf("%d", prod);
 			if (col != n)
 			{
-				printf(", ");
+				printf(",   ");
 			}
 		}
 		printf("\n");
