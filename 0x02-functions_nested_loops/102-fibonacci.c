@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n  = 50, t1 = 1, t2 = 2, i, nextSeq;
+	int n  = 50, t1 = 0, t2 = 1, i, nextSeq;
 
 	for (i = 1; i <= n; i++)
 	{
