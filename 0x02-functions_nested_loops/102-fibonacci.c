@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 1; i <= n; i++)
 	{
-		printf("%d", t1);
+		printf("%lld", t1);
 		if (i != n)
 		{
 			printf(", ");
