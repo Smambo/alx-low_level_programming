@@ -11,7 +11,6 @@ void print_times_table(int n)
 {
 	int row;
 	int col;
-	int prod = row * col;
 
 	if (n > 15 || n < 0)
 	{
@@ -21,6 +20,9 @@ void print_times_table(int n)
 	{
 		for (col = 0; col <= n; col++)
 		{
+
+			int prod = row * col;
+
 			printf("%d", prod);
 			if (col != n)
 			{
