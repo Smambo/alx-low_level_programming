@@ -9,7 +9,8 @@
 int _indexOf(char a)
 {
 	int i;
-	char arr[13] = {' ','\t','\n',',',';','.','!','?','"','(',')','{','}'};
+	char arr[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')',
+		'{', '}'};
 
 	for (i = 0; i < 13; i++)
 	{
@@ -24,6 +25,8 @@ int _indexOf(char a)
  *cap_string - capitalizes all words of a string
  *
  * @str: string to be capitalized
+ *
+ * Return: capitalized string
  */
 char *cap_string(char *str)
 {
@@ -37,7 +40,7 @@ char *cap_string(char *str)
 		}
 		if (str[i] >= 'a' && str[i] <= 'z' && (_indexOf(str[i - 1]) || i == 0))
 		{
-			str[i] = str[i] -32;
+			str[i] = str[i] - 32;
 		}
 	}
 	return (str);
