@@ -5,6 +5,8 @@
  * @dest: resulting string
  * @src: string to be appended
  * @n: number of bytes to be concatenated
+ *
+ * Return: dest char
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -21,5 +23,5 @@ char *_strncat(char *dest, char *src, int n)
 		sc++;
 	}
 	dest[dc + sc] = '\0';
-       return (dest);	
+	return (dest);
 }
