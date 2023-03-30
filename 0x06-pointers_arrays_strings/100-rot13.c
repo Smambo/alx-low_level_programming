@@ -18,12 +18,12 @@ char *rot13(char *str)
 	{
 		for (j = 0; alpha[j] != '\0'; j++)
 		{
-			if(str[i] == alpha[j])
+			if (str[i] == alpha[j])
 			{
 				str[i] = rot13[j];
 				break;
 			}
-		}	
+		}
 	}
 	return (str);
 }
