@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * free_grid - 
+ * free_grid - frees 2-dimensional grid created by alloc_grid function
  *
- * @grid:
- * @height:
+ * @grid: grid to be freed
+ * @height: grid height
  *
  * Return: nothing
  */
