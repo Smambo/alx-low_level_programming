@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#define UNUSED(x)
+#define UNUSED(x) (void)(x)
 /**
  * main - prints the number of arguments passed into it
  *
