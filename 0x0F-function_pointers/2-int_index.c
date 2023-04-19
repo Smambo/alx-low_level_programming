@@ -6,7 +6,7 @@
  * @array: array to be iterated through
  * @size: number of array elements
  * @cmp: function used to compare values
- * 
+ *
  * Return: index of first integer match, otherwise -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
