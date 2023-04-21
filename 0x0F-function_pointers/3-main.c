@@ -9,12 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(EXIT_FAILURE);
-	}
-	else
+	if (argc == 4)
 	{
 		int a;
 		int b;
@@ -32,4 +27,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", func_ptr(a, b));
 		return (0);
 	}
+	printf("Error\n");
+	exit(EXIT_FAILURE);
 }
