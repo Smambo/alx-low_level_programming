@@ -6,7 +6,7 @@
  * @n: input number
  * @start: iterator start
  * @end: iterator end
- * Return: square root of n 
+ * Return: square root of n
  */
 int _sqrt_recursion_iterate(int n, int start, int end)
 {
@@ -17,7 +17,7 @@ int _sqrt_recursion_iterate(int n, int start, int end)
 
 		if (sq == n)
 		{
-			return median;
+			return (median);
 		} else if (sq < n)
 		{
 			return (_sqrt_recursion_iterate(n, median + 1, end));
@@ -38,7 +38,7 @@ int _sqrt_recursion_iterate(int n, int start, int end)
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0 )
+	if (n < 0)
 	{
 		return (-1);
 	}
