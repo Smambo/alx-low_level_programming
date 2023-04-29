@@ -13,12 +13,9 @@ int is_palindrome(char *s)
 	int start = 0;
 	int end = strlen(s - 1);
 
-	for (; start < end; start++, end--)
+	if (s[start] != s[end])
 	{
-		if (s[start] != s[end])
-		{
-			return (0);
-		}
+		return (0);
 	}
 	if (start >= end)
 	{
