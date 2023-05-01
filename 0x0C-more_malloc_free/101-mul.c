@@ -15,7 +15,7 @@ long int mul(long int num1, long int num2)
 
 /**
  * num_verify - verifies if input string is number or not
- * str: input string
+ * @str: input string
  * Return: 1 if str is a digit, otherwise 0.
  */
 int num_verify(char *str)
@@ -24,7 +24,7 @@ int num_verify(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if(!isdigit(str[i]))
+		if (!isdigit(str[i]))
 		{
 			return (0);
 		}
@@ -36,6 +36,7 @@ int num_verify(char *str)
  * main - checks if number of arguments is correct
  * @argc: argument counter
  * @argv: argument vector
+ * Return: 0 (Success)
  */
 int main(int argc, char *argv[])
 {
