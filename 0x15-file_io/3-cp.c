@@ -32,7 +32,7 @@ int main(int ac, char **av)
 	}
 	while ((rd = read(fdFrom, buf, 1024)) > 0)
 	{
-		wr = write(fdTo,buf, rd);
+		wr = write(fdTo, buf, rd);
 		if (wr == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
