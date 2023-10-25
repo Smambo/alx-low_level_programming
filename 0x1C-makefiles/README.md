@@ -81,6 +81,20 @@ Requirements:
 * The `all` rule should recompile only the updated source files
 * You are not allowed to have a list of all the `.o` files
 
+```
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make -f 2-Makefile 
+gcc    -c -o main.o main.c
+gcc    -c -o school.o school.c
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make -f 2-Makefile 
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ echo "/* School */" >> main.c
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make -f 2-Makefile 
+gcc    -c -o main.o main.c
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$
+```
+
 ### 3.make -f 3-Makefile
 Requirements:
 
