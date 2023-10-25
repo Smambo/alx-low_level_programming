@@ -186,6 +186,14 @@ Requirements:
 * The `clean`, `oclean`, `fclean`, `re` rules should never fail
 * You are not allowed to have a list of all the `.o` files
 
+```
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make all -f 4-Makefile 
+gcc -Wall -Werror -Wextra -pedantic -c -o main.o main.c
+gcc -Wall -Werror -Wextra -pedantic -c -o school.o school.c
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ 
+```
+
 ### 5.Island Perimeter
 **Technical interview preparation:**
 
