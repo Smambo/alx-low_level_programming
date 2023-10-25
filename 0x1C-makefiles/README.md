@@ -115,6 +115,56 @@ Requirements:
 * The `clean`, `oclean`, `fclean`, `re` rules should never fail
 * You are not allowed to have a list of all the `.o` files
 
+```
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ ls -1
+0-Makefile
+1-Makefile
+2-Makefile
+3-Makefile
+main.c
+m.h
+README.md
+school
+school.c
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make -f 3-Makefile 
+gcc    -c -o main.o main.c
+gcc    -c -o school.o school.c
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make all -f 3-Makefile 
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ ls -1
+0-Makefile
+1-Makefile
+2-Makefile
+3-Makefile
+main.c
+main.o
+m.h
+README.md
+school
+school.c
+school.o
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make clean -f 3-Makefile 
+rm -f *~ school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make oclean -f 3-Makefile 
+rm -f main.o school.o
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make fclean -f 3-Makefile 
+rm -f *~ school
+rm -f main.o school.o
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make all -f 3-Makefile 
+gcc    -c -o main.o main.c
+gcc    -c -o school.o school.c
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make all -f 3-Makefile 
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$ make re -f 3-Makefile 
+rm -f main.o school.o
+gcc    -c -o main.o main.c
+gcc    -c -o school.o school.c
+gcc main.o school.o -o school
+smambo@lenovo-ubuntu:~/alx-low_level_programming/0x1C-makefiles$
+```
+
 ### 4.A complete Makefile
 Requirements:
 
