@@ -36,3 +36,4 @@ The definition of low-level has changed quite a bit since the inception of compu
 23. [0x18-dynamic_libraries](./0x18-dynamic_libraries)
 24. [0x1A-hash_tables](./0x1A-hash_tables)
 25. [0x1C-makefiles](./0x1C-makefiles)
+26. [0x1E-search_algorithms](./0x1E-search_algorithms)
